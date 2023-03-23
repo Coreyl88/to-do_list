@@ -1,6 +1,12 @@
 import React from 'react'
 
-export const Todo = () => {
+interface item {
+    id: number;
+    text: string;
+    complete: boolean;
+}
+
+export const Todo: React.FC = () => {
   return (
     <div className='main-container'>
         <h1>To-Do List</h1>
